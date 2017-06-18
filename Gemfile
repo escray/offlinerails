@@ -36,26 +36,26 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Gemfile from anndoko@github #
+# Gemfile from zuodao@github #
 # user count #
 gem 'devise'
 
 # UI #
 gem 'bootstrap-sass'
+gem 'bootstrap-tagsinput-rails'
 gem 'simple_form'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'font-awesome-rails'
 gem 'masonry-rails'
-
-# social share #
-gem 'social-share-button'
-gem 'seo_helper'
+gem 'material_icons'
 
 # search #
 gem 'ransack'
 
 # picture #
 gem 'carrierwave'
+gem 'carrierwave-aws'
 gem 'mini_magick'
 
 # order status #
@@ -64,6 +64,13 @@ gem 'aasm'
 # AWS #
 gem 'fog-aws'
 gem 'figaro'
+
+# social share #
+gem 'social-share-button'
+gem 'seo_helper'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
 
 # Intercom Customer Service #
 gem 'intercom-rails'
@@ -78,7 +85,11 @@ group :development, :test do
   # Rails Console layout
   gem 'awesome_rails_console'
 
-  gem 'sqlite3'
+  # gem 'sqlite3'
+
+  gem 'annotate'
+  gem 'dotenv-rails'
+  gem 'letter_opener'
 end
 
 group :development do
